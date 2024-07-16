@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ProgramaPrueba
+comment0.text=\r\n\ Clase-programa\ para\ probar\ todas\ las\ figuras\ definidas.\r\n\ Tambi\u00C3\u00A9n\ se\ puede\ hacer\ una\ ejecuci\u00C3\u00B3n\ parecida\ utilizando\r\n\ el\ <B>workbench</B>\ del\ BlueJ.\r\n\ @author\ IIP\ \r\n\ @version\ Pr\u00C3\u00A1ctica\ 2\ -\ Curso\ 2016/17\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
