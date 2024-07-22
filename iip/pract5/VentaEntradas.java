@@ -55,11 +55,12 @@ public class VentaEntradas {
                 System.out.print("Es festivo? (SI/NO) "); 
                 String fes = teclado.next().toUpperCase(); 
                 if (fes.equals("SI")) { festivo = true; }
-                
-                System.out.print("Es vispera? (SI/NO) "); 
-                String vis = teclado.next().toUpperCase(); 
-                if (vis.equals("SI")) { vispera = true; }
-                
+                // Agregue este else para festivo o vispera
+                else {
+                    System.out.print("Es vispera? (SI/NO) "); 
+                    String vis = teclado.next().toUpperCase(); 
+                    if (vis.equals("SI")) { vispera = true; }
+                }
                 System.out.print("Tiene tarjeta cliente? (SI/NO) "); 
                 String tCl = teclado.next().toUpperCase(); 
                 if (tCl.equals("SI")) { tCliente = true; }
