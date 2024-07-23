@@ -125,15 +125,16 @@ public class Entrada {
         } else {            
             if (festivo == true) {
                 precioEntrada = PRECIO_BASE * ATO_FESTIVO;
-            }else if (visp == true) {
+            } else if (visp == true) {
                 precioEntrada = PRECIO_BASE * ATO_VIS_FESTIVO;
             } 
             
-             else if (tCliente == true){
+            if (tCliente == true){
                 precioEntrada = precioEntrada * DTO_TJT_CLIENTE;
-            }else{
-                precioEntrada = PRECIO_BASE;
-            }
+            } 
+             // else{
+                // precioEntrada = PRECIO_BASE;
+            // }
         }
         
         

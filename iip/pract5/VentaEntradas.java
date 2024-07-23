@@ -29,6 +29,8 @@ public class VentaEntradas {
 
         // Lectura de los datos para aplicar descuentos
         // variables a utilizar inicializadas por defecto a false:
+        /* A COMPLETAR: Lectura de RESTO de datos para aplicar DESCUENTOS */
+        
         boolean bDiaEspec = false;
         boolean vispera = false; 
         boolean tCliente = false;
@@ -51,12 +53,11 @@ public class VentaEntradas {
             
             
             if( !bDiaEspec ) {
-                /* A COMPLETAR */
                 System.out.print("Es festivo? (SI/NO) "); 
                 String fes = teclado.next().toUpperCase(); 
-                if (fes.equals("SI")) { festivo = true; }
-                // Agregue este else para festivo o vispera
-                else {
+                if (fes.equals("SI")) { 
+                    festivo = true; 
+                } else { // Agregue este else para festivo o vispera
                     System.out.print("Es vispera? (SI/NO) "); 
                     String vis = teclado.next().toUpperCase(); 
                     if (vis.equals("SI")) { vispera = true; }
@@ -70,7 +71,7 @@ public class VentaEntradas {
         } 
         
 
-        /* A COMPLETAR: Lectura de RESTO de datos para aplicar DESCUENTOS */
+  
 
         // Calculo del precio final de la Entrada e, 
         // invocando al metodo precioFinal

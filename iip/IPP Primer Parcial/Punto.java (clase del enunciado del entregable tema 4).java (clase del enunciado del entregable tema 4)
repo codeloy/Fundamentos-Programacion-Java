@@ -46,15 +46,10 @@ public class Punto {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }    
    
-    /** Devuelve la distancia entre el Punto this y p. */
+    /** Devuelve la distancia entre el Punto y p. */
     public double distancia(Punto p) { 
         double x = p.x - this.x; double y = p.y - this.y; 
         return Math.sqrt(x * x + y * y); 
-    }
-    
-    public static double distancia(Punto p1, Punto p2) {
-        double dx = p1.x - p2.x; double dy = p1.y - p2.y;
-        return Math.sqrt(dx*dx + dy*dy);
     }
     
     /** Devuelve true sii o es un Punto cuyas 
@@ -62,15 +57,15 @@ public class Punto {
      */
     public boolean equals(Object o) {
         return o instanceof Punto 
-               && this.x == ((Punto) o).x
-               && this.y == ((Punto) o).y;
-    }    
+	           && this.x == ((Punto) o).x
+	           && this.y == ((Punto) o).y;
+    }	
   
     /** Devuelve la informacion del Punto 
      *  en el formato "(x,y)". 
      */
     public String toString() {
-         return "(" + this.x + "," + this.y + ")";
+     	return "(" + this.x + "," + this.y + ")";
     }
     
     /** Devuelve la abscisa correpondiente a unas coordenadas polares
