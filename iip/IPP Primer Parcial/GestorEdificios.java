@@ -1,33 +1,32 @@
 
 /**
- * Write a description of class GestorEdificios here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * 1 Parcial 
+ * Eloy Arana 23-08-2024
  */
-public class GestorEdificios
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class GestorEdificios
-     */
-    public GestorEdificios()
-    {
-        // initialise instance variables
-        x = 0;
+public class GestorEdificios{
+    
+     
+     // codigo, entidad, tipo, coordenadas
+   public static void main(String[]args){
+       Punto coordenadas = new Punto(39.4826, -0.3470);
+       Edificio e1 = new Edificio("1G", "ETSINF",1, coordenadas);
+       
+       //Contructor por defecto e2
+       Edificio e2 = new Edificio();
+           
+       int distEdificios = e1.masCercaRectorado(e2);
+           String res = "El edificio mas cercano de rectorado es ";
+           if(distEdificios == 1){
+                res += e1;
+            }
+            else if(distEdificios == -1){
+                res += e2;
+            }
+           else{
+                res = "Ambos edificios estan a igual distancia de rectorado";
+            }
+       System.out.println(res);
     }
+    
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
 }
