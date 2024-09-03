@@ -40,6 +40,6 @@ public class Punto
     }
     
     public String toString() {
-        return "";
+        return "(" + x + " , " + y + ")";
     }
 }

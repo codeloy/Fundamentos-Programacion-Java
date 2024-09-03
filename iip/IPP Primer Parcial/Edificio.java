@@ -39,7 +39,6 @@ public class Edificio{
             return false;
         } else{
             // Edificio edificioAux = (Edificio) otro;
-            
             return this.codigo.equals(((Edificio)otro).codigo)// Es edificioAux u otro?
             && this.coordenadas.equals(((Edificio)otro).coordenadas);
         }

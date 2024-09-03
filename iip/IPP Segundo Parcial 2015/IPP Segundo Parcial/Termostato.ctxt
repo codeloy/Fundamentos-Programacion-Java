@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Termostato
+comment0.text=\r\n\ @author\ (Eloy\ Arana)\ \r\n\ @version\ (25/08/24)\r\n
+comment1.params=n\ m\ tC\ tA
+comment1.target=Termostato(java.lang.String,\ int,\ int,\ double)
+comment2.params=
+comment2.target=Termostato()
+comment3.params=x\ y
+comment3.target=double\ generarAleatoreo(double,\ double)
+comment4.params=
+comment4.target=int\ getModo()
+comment5.params=nuevoModo
+comment5.target=void\ setModo(int)
+numComments=6
